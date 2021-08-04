@@ -7,10 +7,12 @@
     "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/share/http/server.ts",
     "lint": "eslint . --ext .ts",
-    "lint-fix": "eslint . --ext .ts --fix"
+    "lint-fix": "eslint . --ext .ts --fix",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
     "@types/node": "^16.4.10",
+    "@types/uuid": "^8.3.1",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
     "eslint": "^7.32.0",
@@ -26,8 +28,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
-    "pg": "^8.7.1",
+    "mysql2": "^2.2.5",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.36"
+    "typeorm": "^0.2.36",
+    "uuid": "^8.3.2"
   }
 }
